@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Floor Plan</title>
+    <title>Floor Plan Student</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
-    <link href="../css/popup.css" rel="stylesheet">
-    <script defer src="../js/popup.js"></script>
+    <link href="../../css/popup.css" rel="stylesheet">
+    <script defer src="../../js/popup.js"></script>
 
     <style>
         .floor {
@@ -398,28 +398,6 @@
         <div class="modal-body">
 
             <div id="assetsContainer" class="assetContainerClass"></div> <!-- Container for displaying assets -->
-
-            <button id="addAssetButton">Add Asset</button> <!-- Button for adding new assets -->
-            <div id="addAssetForm" class="form1" style="display: none;"> <!-- Hidden form for adding assets -->
-                <input type="text" id="assetName" placeholder="Name of Asset to add">
-                <input type="number" id="assetQuantity" placeholder="Quantity of Asset">
-                <button id="submitAsset">Submit</button>
-            </div>
-
-            <button id="deleteAssetButton">delete Asset</button>
-            <div id="deleteAssetForm" class="form1" style="display: none;"> <!-- Hidden form for adding assets -->
-                <input type="text" id="assetNameToDelete" placeholder="Name of Asset">
-                <button id="deleteAsset">Submit</button>
-            </div>
-
-            <button id="updateAssetButton">Update Asset</button> <!-- Button for adding new assets -->
-            <div id="updateAssetForm" class="form1" style="display: none;"> <!-- Hidden form for adding assets -->
-                <input type="text" id="assetNameToUpdate" placeholder="Name of Asset">
-                <input type="number" id="assetQuantityToUpdate" placeholder="Quantity of Asset">
-                <button id="updateAsset">Submit</button>
-            </div>
-
-            <button id="clearAllButton">Clear All</button>
         </div>
     </div>
     <div id="overlay"></div>
