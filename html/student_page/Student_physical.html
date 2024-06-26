@@ -287,54 +287,86 @@
         }
 
         .buttons {
-            position: absolute;
-            top: 450px;
-            left: 20%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .buttons button {
+            margin: 40px 10px;
+            background-color: rgb(0, 132, 255);
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            padding: 6px;
+            cursor: pointer;
+            font-size: 16px;
         }
     </style>
-
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body ng-controller="FloorController as floorCtrl" ng-init="floorCtrl.initialize()">
+    <div class="ldheader">
+        <div class="logo"><img src="/css/ldlogo.png" style="height: 100px; width: 100px;"></div>
+        <div class="ldname">L. D. College of Engineering
+            <div class="loc">Ahemedabad, Gujarat, India</div>
+        </div>
+        <div class="gtu">
+            <img src="/css/affilated.jpg" alt="">
+        </div>
+
+    </div>
+    <nav>
+        <a href="/html/index2.html" style="text-decoration: none;">
+            <div class="headline">Home</div>
+        </a>
+        <a href="/html/student_page/Student_announcement.html" style="text-decoration: none;">
+            <div class="headline">Announcement</div>
+        </a>
+        <a href="/html/student_page/Student_physical.html" target="_blank" style="text-decoration: none;">
+            <div class="headline phy">PHYResource</div>
+        </a>
+        <a href="/html/student_page/Student_digir.html" target="_blank" style="text-decoration: none;">
+            <div class="headline dig">DigitalResource</div>
+        </a>
+        <a href="/html/student_page/main_timetable.html" target="_blank" style="text-decoration: none;">
+            <div class="headline time">TimeTable</div>
+        </a>
+    </nav>
     <div class="headerAnnexure">
         Basic Physical Assets Manager( for Annexure Building ).
     </div>
 
-    <div class="buttons">
-        <button ng-click="floorCtrl.showFloor(0)">Ground Floor</button>
-        <button ng-click="floorCtrl.showFloor(1)">First Floor</button>
-        <button ng-click="floorCtrl.showFloor(2)">Second Floor</button>
-    </div>
-
+    
     <!-- Floors -->
     <div id="groundFloor" class="floor" ng-class="{'active': floorCtrl.currentFloor === 0}">
         <div class="class clickable-class" id="class1001" ng-class="{'occupied': floorCtrl.isOccupied('1001')}"
             data-modal-target="#modal" data-modal-title="1001" data-class-id="1001">1001</div>
-        <div class="class clickable-class" id="class1002" ng-class="{'occupied': floorCtrl.isOccupied('1002')}"
+            <div class="class clickable-class" id="class1002" ng-class="{'occupied': floorCtrl.isOccupied('1002')}"
             data-modal-target="#modal" data-modal-title="1002" data-class-id="1002">1002</div>
-        <div class="class clickable-class" id="class1003" ng-class="{'occupied': floorCtrl.isOccupied('1003')}"
+            <div class="class clickable-class" id="class1003" ng-class="{'occupied': floorCtrl.isOccupied('1003')}"
             data-modal-target="#modal" data-modal-title="1003" data-class-id="1003">1003/1004</div>
-        <div class="class clickable-class" id="class1005" ng-class="{'occupied': floorCtrl.isOccupied('1005')}"
+            <div class="class clickable-class" id="class1005" ng-class="{'occupied': floorCtrl.isOccupied('1005')}"
             data-modal-target="#modal" data-modal-title="1005" data-class-id="1005">1005</div>
-        <div class="class clickable-class" id="class1006" ng-class="{'occupied': floorCtrl.isOccupied('1006')}"
+            <div class="class clickable-class" id="class1006" ng-class="{'occupied': floorCtrl.isOccupied('1006')}"
             data-modal-target="#modal" data-modal-title="1006" data-class-id="1006">1006</div>
-        <div class="class clickable-class" id="class1007" ng-class="{'occupied': floorCtrl.isOccupied('1007')}"
+            <div class="class clickable-class" id="class1007" ng-class="{'occupied': floorCtrl.isOccupied('1007')}"
             data-modal-target="#modal" data-modal-title="1007" data-class-id="1007">1007</div>
-        <div class="class clickable-class" id="class1008" ng-class="{'occupied': floorCtrl.isOccupied('1008')}"
+            <div class="class clickable-class" id="class1008" ng-class="{'occupied': floorCtrl.isOccupied('1008')}"
             data-modal-target="#modal" data-modal-title="1008" data-class-id="1008">1008</div>
-        <div class="class clickable-class" id="class1009" ng-class="{'occupied': floorCtrl.isOccupied('1009')}"
+            <div class="class clickable-class" id="class1009" ng-class="{'occupied': floorCtrl.isOccupied('1009')}"
             data-modal-target="#modal" data-modal-title="1009" data-class-id="1009">1009</div>
-        <div class="class clickable-class" id="class1010" ng-class="{'occupied': floorCtrl.isOccupied('1010')}"
+            <div class="class clickable-class" id="class1010" ng-class="{'occupied': floorCtrl.isOccupied('1010')}"
             data-modal-target="#modal" data-modal-title="1010" data-class-id="1010">1010</div>
-        <div class="class clickable-class" id="class1011" ng-class="{'occupied': floorCtrl.isOccupied('1011')}"
+            <div class="class clickable-class" id="class1011" ng-class="{'occupied': floorCtrl.isOccupied('1011')}"
             data-modal-target="#modal" data-modal-title="1011" data-class-id="1011">1011</div>
-        <div class="class clickable-class" id="class1012" ng-class="{'occupied': floorCtrl.isOccupied('1012')}"
+            <div class="class clickable-class" id="class1012" ng-class="{'occupied': floorCtrl.isOccupied('1012')}"
             data-modal-target="#modal" data-modal-title="1012" data-class-id="1012">1012</div>
-        <div class="class clickable-class" id="class1013" ng-class="{'occupied': floorCtrl.isOccupied('1013')}"
+            <div class="class clickable-class" id="class1013" ng-class="{'occupied': floorCtrl.isOccupied('1013')}"
             data-modal-target="#modal" data-modal-title="1013" data-class-id="1013">1013</div>
-        <div class="class" id="classfloor">Ground Floor</div>
-
-    </div>
+            <div class="class" id="classfloor">Ground Floor</div>
+            
+        </div>
     <div id="firstFloor" class="floor" ng-class="{'active': floorCtrl.currentFloor === 1}">
         <div class="class clickable-class" id="class2001" ng-class="{'occupied': floorCtrl.isOccupied('2001')}"
             data-modal-target="#modal" data-modal-title="2001" data-class-id="2001">2001</div>
@@ -343,53 +375,59 @@
         <div class="class clickable-class" id="class2003" ng-class="{'occupied': floorCtrl.isOccupied('2003')}"
             data-modal-target="#modal" data-modal-title="2003" data-class-id="2003">2003</div>
         <div class="class clickable-class" id="class2004" ng-class="{'occupied': floorCtrl.isOccupied('2004')}"
-            data-modal-target="#modal" data-modal-title="Faculty Office" data-class-id="fo1">Faculty Office</div>
+        data-modal-target="#modal" data-modal-title="Faculty Office" data-class-id="fo1">Faculty Office</div>
         <div class="class clickable-class" id="class2005" ng-class="{'occupied': floorCtrl.isOccupied('2005')}"
             data-modal-target="#modal" data-modal-title="2005" data-class-id="2005">2005</div>
-        <div class="class clickable-class" id="class2006" ng-class="{'occupied': floorCtrl.isOccupied('2006')}"
+            <div class="class clickable-class" id="class2006" ng-class="{'occupied': floorCtrl.isOccupied('2006')}"
             data-modal-target="#modal" data-modal-title="2006" data-class-id="2006">2006</div>
-        <div class="class clickable-class" id="class2008" ng-class="{'occupied': floorCtrl.isOccupied('2008')}"
+            <div class="class clickable-class" id="class2008" ng-class="{'occupied': floorCtrl.isOccupied('2008')}"
             data-modal-target="#modal" data-modal-title="2008" data-class-id="2008">2008</div>
         <div class="class clickable-class" id="class2009" ng-class="{'occupied': floorCtrl.isOccupied('2009')}"
-            data-modal-target="#modal" data-modal-title="2009" data-class-id="2009">2009</div>
+        data-modal-target="#modal" data-modal-title="2009" data-class-id="2009">2009</div>
         <div class="class clickable-class" id="class2010" ng-class="{'occupied': floorCtrl.isOccupied('2010')}"
-            data-modal-target="#modal" data-modal-title="Faculty Office" data-class-id="fo2">Faculty Office</div>
+        data-modal-target="#modal" data-modal-title="Faculty Office" data-class-id="fo2">Faculty Office</div>
         <div class="class clickable-class" id="class2011" ng-class="{'occupied': floorCtrl.isOccupied('2011')}"
-            data-modal-target="#modal" data-modal-title="2011" data-class-id="2011">2011</div>
+        data-modal-target="#modal" data-modal-title="2011" data-class-id="2011">2011</div>
         <div class="class clickable-class" id="class2012" ng-class="{'occupied': floorCtrl.isOccupied('2012')}"
-            data-modal-target="#modal" data-modal-title="2012" data-class-id="2012">2012</div>
+        data-modal-target="#modal" data-modal-title="2012" data-class-id="2012">2012</div>
         <div class="class clickable-class" id="class2013" ng-class="{'occupied': floorCtrl.isOccupied('2013')}"
-            data-modal-target="#modal" data-modal-title="2013" data-class-id="2013">2013</div>
+        data-modal-target="#modal" data-modal-title="2013" data-class-id="2013">2013</div>
         <div class="class" id="classfloor">First Floor</div>
     </div>
     <div id="secondFloor" class="floor" ng-class="{'active': floorCtrl.currentFloor === 2}">
         <div class="class clickable-class" id="class3001" ng-class="{'occupied': floorCtrl.isOccupied('3001')}"
-            data-modal-target="#modal" data-modal-title="3001" data-class-id="3001">3001</div>
+        data-modal-target="#modal" data-modal-title="3001" data-class-id="3001">3001</div>
         <div class="class clickable-class" id="class3002" ng-class="{'occupied': floorCtrl.isOccupied('3002')}"
-            data-modal-target="#modal" data-modal-title="3002" data-class-id="3002">3002</div>
+        data-modal-target="#modal" data-modal-title="3002" data-class-id="3002">3002</div>
         <div class="class clickable-class" id="class3003" ng-class="{'occupied': floorCtrl.isOccupied('3003')}"
-            data-modal-target="#modal" data-modal-title="3003" data-class-id="3003">3003</div>
+        data-modal-target="#modal" data-modal-title="3003" data-class-id="3003">3003</div>
         <div class="class clickable-class" id="class3004" ng-class="{'occupied': floorCtrl.isOccupied('3004')}"
             data-modal-target="#modal" data-modal-title="Faculty Office" data-class-id="fo3">Faculty Office</div>
         <div class="class clickable-class" id="class3005" ng-class="{'occupied': floorCtrl.isOccupied('3005')}"
-            data-modal-target="#modal" data-modal-title="3005" data-class-id="3005">3005</div>
+        data-modal-target="#modal" data-modal-title="3005" data-class-id="3005">3005</div>
         <div class="class clickable-class" id="class3006" ng-class="{'occupied': floorCtrl.isOccupied('3006')}"
-            data-modal-target="#modal" data-modal-title="3006" data-class-id="3006">3006</div>
+        data-modal-target="#modal" data-modal-title="3006" data-class-id="3006">3006</div>
         <div class="class clickable-class" id="class3008" ng-class="{'occupied': floorCtrl.isOccupied('3008')}"
             data-modal-target="#modal" data-modal-title="3008" data-class-id="3008">3008</div>
-        <div class="class clickable-class" id="class3009" ng-class="{'occupied': floorCtrl.isOccupied('3009')}"
+            <div class="class clickable-class" id="class3009" ng-class="{'occupied': floorCtrl.isOccupied('3009')}"
             data-modal-target="#modal" data-modal-title="3009" data-class-id="3009">3009</div>
-        <div class="class clickable-class" id="class3010" ng-class="{'occupied': floorCtrl.isOccupied('3010')}"
+            <div class="class clickable-class" id="class3010" ng-class="{'occupied': floorCtrl.isOccupied('3010')}"
             data-modal-target="#modal" data-modal-title="Faculty Office" data-class-id="3010">Faculty Office</div>
-        <div class="class clickable-class" id="class3011" ng-class="{'occupied': floorCtrl.isOccupied('3011')}"
+            <div class="class clickable-class" id="class3011" ng-class="{'occupied': floorCtrl.isOccupied('3011')}"
             data-modal-target="#modal" data-modal-title="3010" data-class-id="3011">3011</div>
-        <div class="class clickable-class" id="class3012" ng-class="{'occupied': floorCtrl.isOccupied('3012')}"
+            <div class="class clickable-class" id="class3012" ng-class="{'occupied': floorCtrl.isOccupied('3012')}"
             data-modal-target="#modal" data-modal-title="3011" data-class-id="3012">3012</div>
-        <div class="class clickable-class" id="class3013" ng-class="{'occupied': floorCtrl.isOccupied('3013')}"
+            <div class="class clickable-class" id="class3013" ng-class="{'occupied': floorCtrl.isOccupied('3013')}"
             data-modal-target="#modal" data-modal-title="3013" data-class-id="3013">3013</div>
         <div class="class" id="classfloor">Second Floor</div>
     </div>
 
+    <div class="buttons">
+        <button ng-click="floorCtrl.showFloor(0)">Ground Floor</button>
+        <button ng-click="floorCtrl.showFloor(1)">First Floor</button>
+        <button ng-click="floorCtrl.showFloor(2)">Second Floor</button>
+    </div>
+    
     <div class="modal" id="modal">
         <div class="modal-header">
             <div class="modal-title">Example Modal</div>

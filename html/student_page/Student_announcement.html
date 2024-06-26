@@ -19,77 +19,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.6/ui-bootstrap-tpls.min.js"></script>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: #f0f0f0;
-        }
-
-        .ldheader {
-            margin-top: 20px;
-            display: flex;
-            align-items: center;
-            border-bottom: 3px solid blue;
-            padding-bottom: 20px;
-        }
-
-        .logo {
-            height: fit-content;
-            width: fit-content;
-            margin-left: 400px;
-        }
-
-        .ldname {
-            font-size: 35px;
-            height: fit-content;
-            width: fit-content;
-            font-family: Arial, Helvetica, sans-serif;
-            padding-left: 10px;
-        }
-
-        .menubar {
-            margin-left: 100px;
-            display: flex;
-        }
-
-        .loc {
-            font-size: 20px;
-        }
-
-        .headline {
-            width: fit-content;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            margin-left: 130px;
-            color: #00008b;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-            border-bottom: 4px solid #00008b;
-        }
-
-        .headline1 {
-            width: fit-content;
-            margin: 15px 0 15px 250px;
-            color: #00008b;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-            border-bottom: 4px solid #00008b;
-        }
-
-        .content {
-            height: fit-content;
-            margin: 25px 250px 25px 250px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 15px;
-            padding: 50px;
-            border-left: 3px solid #00008b;
-        }
-
         .container1 {
-            max-width: 40%;
+            width: fit-content;
             height: auto;
             margin: 50px auto;
             padding: 20px;
@@ -98,8 +29,12 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             justify-content: center;
             align-items: center;
-        }
+        } 
 
+        .table {
+            width: 80%;
+            margin: 0px auto;
+        }
         textarea {
             width: 300px;
             height: 150px;
@@ -109,15 +44,21 @@
             width: 300px;
         }
     </style>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body ng-controller="AnnouncementController">
     <div class="ldheader">
         <div class="logo"><img src="/css/ldlogo.png" style="height: 100px; width: 100px;"></div>
-        <div class="ldname">L.D. College of Engineering <div class="loc">Ahemedabad, Gujarat, India</div>
+        <div class="ldname">L. D. College of Engineering
+            <div class="loc">Ahemedabad, Gujarat, India</div>
         </div>
+        <div class="gtu">
+            <img src="/css/affilated.jpg" alt="">
+        </div>
+
     </div>
-    <div class="menubar">
+    <nav>
         <a href="/html/index2.html" style="text-decoration: none;">
             <div class="headline">Home</div>
         </a>
@@ -127,13 +68,13 @@
         <a href="/html/student_page/Student_physical.html" target="_blank" style="text-decoration: none;">
             <div class="headline phy">PHYResource</div>
         </a>
-        <a href="/html/student_page/Student_announcement.html" target="_blank" style="text-decoration: none;">
+        <a href="/html/student_page/Student_digir.html" target="_blank" style="text-decoration: none;">
             <div class="headline dig">DigitalResource</div>
         </a>
         <a href="/html/student_page/main_timetable.html" target="_blank" style="text-decoration: none;">
             <div class="headline time">TimeTable</div>
         </a>
-    </div>
+    </nav>
     <div class="container">
         <div class="scroll">
             <div class="RightToLeft">

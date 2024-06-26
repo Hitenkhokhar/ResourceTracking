@@ -23,7 +23,7 @@
             padding: 0;
         }
 
-        .ldheader {
+        /* .ldheader {
             margin-top: 20px;
             display: flex;
             align-items: center;
@@ -81,25 +81,29 @@
             font-size: 15px;
             padding: 50px;
             border-left: 3px solid #00008b;
-        }
+        } */
     </style>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body ng-controller="AnnouncementController">
     <div class="ldheader">
         <div class="logo"><img src="/css/ldlogo.png" style="height: 100px; width: 100px;"></div>
-        <div class="ldname">L.D. College of Engineering <div class="loc">Ahemedabad, Gujarat, India</div>
+        <div class="ldname">L. D. College of Engineering
+            <div class="loc">Ahemedabad, Gujarat, India</div>
+        </div>
+        <div class="gtu">
+            <img src="/css/affilated.jpg" alt="">
         </div>
 
     </div>
-    <div class="menubar">
+    <nav>
         <a href="/html/index2.html" style="text-decoration: none;">
             <div class="headline">Home</div>
         </a>
         <a href="/html/student_page/Student_announcement.html" style="text-decoration: none;">
             <div class="headline">Announcement</div>
         </a>
-
         <a href="/html/student_page/Student_physical.html" target="_blank" style="text-decoration: none;">
             <div class="headline phy">PHYResource</div>
         </a>
@@ -109,8 +113,9 @@
         <a href="/html/main_timetable.html" target="_blank" style="text-decoration: none;">
             <div class="headline time">TimeTable</div>
         </a>
-    </div>
-    <div class="container">
+    </nav>
+    
+    <div class="container" style="max-width: 70%; overflow-x: hidden; justify-content: center; align-items: center; height: 60px;">
         <div class="scroll">
             <div class="RightToLeft">
                 <p ng-repeat="announcement in announcements">
